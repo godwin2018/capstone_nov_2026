@@ -254,6 +254,7 @@ class DataQuality(BaseUtility):
 
     def check_null_value_in_database(self, query, db_conn):
         try:
+            query =f'select * from {table_name}'
             df = pd.read_sql(query, db_conn)
             if df.isnull().values().any():
                 return False
@@ -274,9 +275,11 @@ class DataQuality(BaseUtility):
 
 class SchemaValidationUtility(BaseUtility):
     def validate_column_names(self,db_conn,table_name,expected_column_names):
-        query = f"select * from {table_name} where {expected_column_names}"
+        query = f"select * from {table_name}"
+        #query = f"select * from {table_name} where {expected_column_names}"
         df = pd.read_sql(query, db_conn)
         actual_column_name = list(df.columns)
+        logger.info(f"actual_column_name: {actual_column_name}")
         assert actual_column_name == expected_column_names, (f"{table_name} validation failed "
                                                             f"\n on {expected_column_names} column mismatch")
 
@@ -285,8 +288,9 @@ class SchemaValidationUtility(BaseUtility):
         df = pd.read_sql(query, db_conn)
         for column_name,expected_datatype in expected_datatypes_dict.items():
             actual_data_type = df[column_name].dtypes
+            logger.info(f'actula data types are {actual_data_type}')
             assert actual_data_type in expected_datatype, (f" data type mismatch in {table_name} "
-                                                           f"\n for ismatch in column {column_name}"
+                                                           f"\n for mismatch in column {column_name}"
                                                            f"\n expect column is {expected_datatypes_dict}"
                                                            f"\n actual column is {actual_data_type}")
 

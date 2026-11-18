@@ -27,7 +27,7 @@ class TestDatatransformation:
     validation_utility = ValidationUtility()
     base_utility = BaseUtility()
 
-    #@pytest.mark.skip
+    @pytest.mark.data_transformation
     def test_data_transformation_filtered_sale_data(self,connect_postgress_database):
       test_case_name = inspect.currentframe().f_code.co_name # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
       logger.info(f"Starting test: {test_case_name}")
@@ -46,7 +46,7 @@ class TestDatatransformation:
           logger.error(f"test case failed {test_case_name}:{e}")
           pytest.fail()
 
-    #@pytest.mark.skip(reason="not needed at the moment")
+    @pytest.mark.data_transformation
     def test_data_transformation_for_router_high_sales_data(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
         logger.info(f"Starting test: {test_case_name}")
@@ -65,7 +65,7 @@ class TestDatatransformation:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    #@pytest.mark.skip(reason="not needed at the moment")
+    @pytest.mark.data_transformation
     def test_data_transformation_for_router_low_sales_data(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
         logger.info(f"Starting test: {test_case_name}")
@@ -84,7 +84,7 @@ class TestDatatransformation:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    #@pytest.mark.skip(reason="not needed at the moment")
+    @pytest.mark.data_transformation
     def test_data_transformation_for_aggregator_sales(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
         logger.info(f"Starting test: {test_case_name}")
@@ -103,7 +103,7 @@ class TestDatatransformation:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    #@pytest.mark.skip(reason="not needed at the moment")
+    @pytest.mark.data_transformation
     def test_data_transformation_for_joiner(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
         logger.info(f"Starting test: {test_case_name}")
@@ -123,7 +123,9 @@ class TestDatatransformation:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    #@pytest.mark.skip(reason="not needed at the moment")
+    @pytest.mark.order(5)
+    @pytest.mark.data_transformation
+    @pytest.mark.regression
     def test_data_transformation_aggregator_inventory(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
         logger.info(f"Starting test: {test_case_name}")

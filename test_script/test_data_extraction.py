@@ -27,7 +27,9 @@ class TestDataExtraction:
     validation_utility = ValidationUtility()
     base_utility = BaseUtility()
 
-    @pytest.mark.skip
+    @pytest.mark.order(7)
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
     def test_data_extraction_sales_file_stag(self,connect_postgress_database):
       test_case_name = inspect.currentframe().f_code.co_name # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
       logger.info(f"Starting test: {test_case_name}")
@@ -44,6 +46,9 @@ class TestDataExtraction:
           logger.error(f"test case failed {test_case_name}:{e}")
           pytest.fail()
 
+    @pytest.mark.order(6)
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
     @pytest.mark.skip
     def test_data_extraction_sales_s3_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name  # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
@@ -62,8 +67,8 @@ class TestDataExtraction:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-
-    @pytest.mark.skip
+    @pytest.mark.data_extraction
+    @pytest.mark.smoke
     def test_data_extraction_inventory_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")
@@ -80,7 +85,9 @@ class TestDataExtraction:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    @pytest.mark.skip
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
+    @pytest.mark.smoke
     def test_data_extraction_product_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")
@@ -97,7 +104,10 @@ class TestDataExtraction:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
+    @pytest.mark.smoke
+    @pytest.mark.skip
     def test_data_extraction_product_linux_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")
@@ -119,7 +129,9 @@ class TestDataExtraction:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    @pytest.mark.skip
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
+    #@pytest.mark.skip
     def test_data_extraction_supplier_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")
@@ -136,7 +148,9 @@ class TestDataExtraction:
             logger.error(f"test case failed {test_case_name}:{e}")
             pytest.fail()
 
-    @pytest.mark.skip
+    @pytest.mark.data_extraction
+    @pytest.mark.regression
+    #@pytest.mark.skip
     def test_data_extraction_stores_db_stag(self, connect_postgress_database, connect_oracle_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")

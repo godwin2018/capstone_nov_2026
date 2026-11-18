@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\differences_extra_in_actual_test_data_extraction_sales_file_stag.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\differences_extra_in_actual_test_data_loading_for_monthly_sales_summary.csv">
           <value>
             <Attribute>
@@ -25,6 +32,13 @@
           </value>
         </entry>
         <entry key="\differences_extra_in_expected_test_data_extraction_product_linux_file_stag.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\differences_extra_in_expected_test_data_extraction_sales_file_stag.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

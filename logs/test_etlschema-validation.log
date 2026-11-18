@@ -1,0 +1,192 @@
+2026-11-18 21:59:46,766 - conftest - INFO - postgress databse connection is being established..
+2026-11-18 21:59:46,923 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-18 21:59:46,924 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_sales_file_stag
+2026-11-18 21:59:46,928 - common_utilities.utilities - INFO - CSV read from file: test_data/sales_data.csv
+2026-11-18 21:59:46,938 - common_utilities.utilities - INFO - expected data:     sales_id  product_id  store_id  quantity  price   sale_date region
+0          1         101         1        10   15.0  2026-09-01   High
+1          2         102         1         5   25.0  2026-09-01    Low
+2          3         103         2         7   20.0  2026-09-02   High
+3          4         104         2         3   30.0  2026-09-03    Low
+4          5         105         1        12   12.0  2026-09-05   High
+..       ...         ...       ...       ...    ...         ...    ...
+57        58         108         2         6   24.0  2024-09-08    Low
+58        59         109         3        11   19.0  2024-09-09   High
+59        60         110         4         9   17.0  2024-09-10    Low
+60        59         109         3        11   19.0  2026-11-03   High
+61        60         110         4         9   17.0  2024-09-10    Low
+
+[62 rows x 7 columns]
+2026-11-18 21:59:47,039 - common_utilities.utilities - INFO - actual data:     sales_id  product_id  store_id  quantity  price   sale_date region
+0          1         101         1        10   15.0  2026-09-01   High
+1          2         102         1         5   25.0  2026-09-01    Low
+2          3         103         2         7   20.0  2026-09-02   High
+3          4         104         2         3   30.0  2026-09-03    Low
+4          5         105         1        12   12.0  2026-09-05   High
+..       ...         ...       ...       ...    ...         ...    ...
+57        58         108         2         6   24.0  2026-09-08    Low
+58        59         109         3        11   19.0  2026-09-09   High
+59        60         110         4         9   17.0  2026-09-10    Low
+60        59         109         3        11   19.0  2026-11-03   High
+61        60         110         4         9   17.0  2026-09-10    Low
+
+[62 rows x 7 columns]
+2026-11-18 21:59:47,047 - common_utilities.utilities - ERROR - test_data_extraction_sales_file_stag validation failed test_data_extraction_sales_file_stag failed
+2026-11-18 21:59:47,758 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-18 21:59:47,765 - conftest - INFO - postgress databse connection is being established..
+2026-11-18 21:59:47,765 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-18 21:59:47,765 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag
+2026-11-18 21:59:47,792 - common_utilities.utilities - INFO - xml read from file: test_data/inventory_data.xml
+2026-11-18 21:59:47,795 - common_utilities.utilities - INFO - expected data:     product_id  store_id  quantity_on_hand last_updated
+0          101         1                50   2024-09-01
+1          102         1                30   2024-09-02
+2          103         2                40   2024-09-03
+3          106         3                25   2024-09-06
+4          107         1                35   2024-09-07
+5          108         2                45   2024-09-08
+6          109         3                55   2024-09-09
+7          110         3                65   2024-09-10
+8          101         4                50   2024-09-11
+9          102         4                40   2024-09-12
+10         103         5                30   2024-09-13
+11         104         5                20   2024-09-14
+12         105         6                50   2024-09-15
+13         106         6                60   2024-09-16
+14         107         7                30   2024-09-17
+15         108         7                40   2024-09-18
+16         109         8                45   2024-09-19
+17         110         8                55   2024-09-20
+18         101         9                65   2024-09-21
+19         102         9                75   2024-09-22
+20         103        10                80   2024-09-23
+21         104        10                90   2024-09-24
+22         106         2               110   2024-09-26
+23         107         3               120   2024-09-27
+24         108         4               130   2024-09-28
+25         109         5               140   2024-09-29
+26         110         6               150   2024-09-30
+27         101         7               160   2024-10-01
+28         102         8               170   2024-10-02
+29         103         9               180   2024-10-03
+2026-11-18 21:59:47,863 - common_utilities.utilities - INFO - actual data:     product_id  store_id  quantity_on_hand last_updated
+0          101         1                50   2024-09-01
+1          102         1                30   2024-09-02
+2          103         2                40   2024-09-03
+3          106         3                25   2024-09-06
+4          107         1                35   2024-09-07
+5          108         2                45   2024-09-08
+6          109         3                55   2024-09-09
+7          110         3                65   2024-09-10
+8          101         4                50   2024-09-11
+9          102         4                40   2024-09-12
+10         103         5                30   2024-09-13
+11         104         5                20   2024-09-14
+12         105         6                50   2024-09-15
+13         106         6                60   2024-09-16
+14         107         7                30   2024-09-17
+15         108         7                40   2024-09-18
+16         109         8                45   2024-09-19
+17         110         8                55   2024-09-20
+18         101         9                65   2024-09-21
+19         102         9                75   2024-09-22
+20         103        10                80   2024-09-23
+21         104        10                90   2024-09-24
+22         106         2               110   2024-09-26
+23         107         3               120   2024-09-27
+24         108         4               130   2024-09-28
+25         109         5               140   2024-09-29
+26         110         6               150   2024-09-30
+27         101         7               160   2024-10-01
+28         102         8               170   2024-10-02
+29         103         9               180   2024-10-03
+2026-11-18 21:59:47,865 - common_utilities.utilities - INFO - test_data_extraction_inventory_file_stag passed
+2026-11-18 21:59:47,865 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_inventory_file_stag
+2026-11-18 21:59:47,866 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-18 21:59:47,867 - conftest - INFO - postgress databse connection is being established..
+2026-11-18 21:59:47,868 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-18 21:59:47,868 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
+2026-11-18 21:59:47,870 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
+2026-11-18 21:59:47,878 - common_utilities.utilities - INFO - expected data:    product_id        product_name     category  price  stock_quantity    brand  rating
+0         101           iPhone 15  Smartphones    999              50    Apple     4.8
+1         102  Samsung Galaxy S23  Smartphones    899              75  Samsung     4.7
+2         103         Dell XPS 13      Laptops   1200              30     Dell     4.6
+3         104      MacBook Pro 14      Laptops   2000              25    Apple     4.9
+4         105     Sony WH-1000XM5   Headphones    350             100     Sony     4.7
+5         106       Nike Air Zoom     Sneakers    120             200     Nike     4.5
+6         107      Samsung 55" TV  Electronics    700              40  Samsung     4.4
+7         108    Philips Hue Bulb   Smart Home     50             500  Philips     4.8
+8         109     Fitbit Charge 5    Wearables    150             150   Fitbit     4.6
+9         110   Kindle Paperwhite     eReaders    130              80   Amazon     4.7
+2026-11-18 21:59:47,946 - common_utilities.utilities - INFO - actual data:    product_id        product_name     category  price  stock_quantity    brand  rating
+0         101           iPhone 15  Smartphones    999              50    Apple     4.8
+1         102  Samsung Galaxy S23  Smartphones    899              75  Samsung     4.7
+2         103         Dell XPS 13      Laptops   1200              30     Dell     4.6
+3         104      MacBook Pro 14      Laptops   2000              25    Apple     4.9
+4         105     Sony WH-1000XM5   Headphones    350             100     Sony     4.7
+5         106       Nike Air Zoom     Sneakers    120             200     Nike     4.5
+6         107      Samsung 55" TV  Electronics    700              40  Samsung     4.4
+7         108    Philips Hue Bulb   Smart Home     50             500  Philips     4.8
+8         109     Fitbit Charge 5    Wearables    150             150   Fitbit     4.6
+9         110   Kindle Paperwhite     eReaders    130              80   Amazon     4.7
+2026-11-18 21:59:47,949 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
+2026-11-18 21:59:47,949 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
+2026-11-18 21:59:47,950 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-18 21:59:47,953 - conftest - INFO - postgress databse connection is being established..
+2026-11-18 21:59:47,954 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-18 21:59:47,954 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_supplier_file_stag
+2026-11-18 21:59:47,960 - common_utilities.utilities - INFO - JSON read from file: test_data/supplier_data.json
+2026-11-18 21:59:47,967 - common_utilities.utilities - INFO - expected data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
+0            1      ABC Distributors        John Doe                johndoe@abcdist.com       +1-555-0100        USA     4.8      2024-11-20
+1            2     Global Goods Inc.      Jane Smith          janesmith@globalgoods.com       +1-555-0200     Canada     4.3      2024-11-19
+2            3   GreenTech Solutions  Robert Johnson       robert.johnson@greentech.com  +44-20-7946-0100         UK     4.6      2024-11-18
+3            4              EuroWare     Emily White          emily.white@euro-ware.com  +49-30-9876-5432    Germany     4.2      2024-11-22
+4            5      Pacific Products   Michael Brown  michael.brown@pacificproducts.com   +61-2-9345-6789  Australia     4.7      2024-11-17
+5            6     Fresh Produce Co.    Sarah Taylor      sarah.taylor@freshproduce.com   +33-1-7035-6789     France     4.4      2024-11-21
+6            7  TechCore Electronics       David Lee             david.lee@techcore.com   +81-3-4567-8901      Japan     4.9      2024-11-23
+7            8       HanYang Trading      Laura King             laura.king@hanyang.com  +86-10-8888-7777      China     4.1      2024-11-16
+8            9         Indo Supplies  James Williams             james@indosupplies.com  +91-22-2678-9101      India     4.3      2024-11-25
+9           10         LatAm Imports   Olivia Harris     olivia.harris@latamimports.com  +52-55-2345-6789     Mexico     4.5      2024-11-20
+2026-11-18 21:59:48,037 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
+0            1      ABC Distributors        John Doe                johndoe@abcdist.com       +1-555-0100        USA     4.8      2024-11-20
+1            2     Global Goods Inc.      Jane Smith          janesmith@globalgoods.com       +1-555-0200     Canada     4.3      2024-11-19
+2            3   GreenTech Solutions  Robert Johnson       robert.johnson@greentech.com  +44-20-7946-0100         UK     4.6      2024-11-18
+3            4              EuroWare     Emily White          emily.white@euro-ware.com  +49-30-9876-5432    Germany     4.2      2024-11-22
+4            5      Pacific Products   Michael Brown  michael.brown@pacificproducts.com   +61-2-9345-6789  Australia     4.7      2024-11-17
+5            6     Fresh Produce Co.    Sarah Taylor      sarah.taylor@freshproduce.com   +33-1-7035-6789     France     4.4      2024-11-21
+6            7  TechCore Electronics       David Lee             david.lee@techcore.com   +81-3-4567-8901      Japan     4.9      2024-11-23
+7            8       HanYang Trading      Laura King             laura.king@hanyang.com  +86-10-8888-7777      China     4.1      2024-11-16
+8            9         Indo Supplies  James Williams             james@indosupplies.com  +91-22-2678-9101      India     4.3      2024-11-25
+9           10         LatAm Imports   Olivia Harris     olivia.harris@latamimports.com  +52-55-2345-6789     Mexico     4.5      2024-11-20
+2026-11-18 21:59:48,039 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
+2026-11-18 21:59:48,039 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
+2026-11-18 21:59:48,040 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-18 21:59:48,041 - conftest - INFO - postgress databse connection is being established..
+2026-11-18 21:59:48,041 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-18 21:59:48,042 - conftest - INFO - oracle databse connection is being established..
+2026-11-18 21:59:48,071 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
+2026-11-18 21:59:48,071 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
+2026-11-18 21:59:48,122 - common_utilities.utilities - INFO - expected data :   store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3       BestBuy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2026-11-18 21:59:48,190 - common_utilities.utilities - INFO - actual data:    store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3       BestBuy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2026-11-18 21:59:48,193 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
+2026-11-18 21:59:48,193 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
+2026-11-18 21:59:48,194 - conftest - INFO - oracle databse connection is been terminated..
+2026-11-18 21:59:48,194 - conftest - INFO - postgress databse connection is been terminated..

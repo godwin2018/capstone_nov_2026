@@ -1,2 +1,0 @@
-2026-11-14 13:17:49,941 - test_script.test_data_quality - ERROR - test case failed Inventory data bfile doe not exist
-assert False is True because file does not exist!!!!

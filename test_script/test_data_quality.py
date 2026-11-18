@@ -29,6 +29,7 @@ class TestDataQuality:
 
     logger.info('FILE EXISTENCE CHECK STARTS')
 
+    @pytest.mark.data_quality
     def test_data_quality_file_existence_of_inventory_data_xml(self):
 
         try:
@@ -40,6 +41,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_existence_for_product_data_csv(self):
 
         try:
@@ -50,6 +52,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_existence_for_sales_data_csv(self):
 
         try:
@@ -60,6 +63,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_existence_for_stores_data_csv(self):
 
         try:
@@ -70,6 +74,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_existence_for_supplier_data_json(self):
 
         try:
@@ -82,7 +87,7 @@ class TestDataQuality:
         logger.info('FILE EXISTENCE CHECK ENDS')
         logger.info('========file existence stopping and file size starting==================')
 
-
+    @pytest.mark.data_quality
     def test_data_quality_file_size_for_inventory_data_xml(self):
 
         logger.info('FILE SIZE CHECK STARTS')
@@ -95,6 +100,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file size is empty!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_size_for_product_data_csv(self):
 
         try:
@@ -105,6 +111,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file is empty!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_size_for_sales_data_csv(self):
 
         try:
@@ -115,6 +122,7 @@ class TestDataQuality:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
 
+    @pytest.mark.data_quality
     def test_data_quality_file_size_for_stores_data_csv(self):
 
         try:
@@ -124,6 +132,9 @@ class TestDataQuality:
         except Exception as e:
             logger.error(f"test case failed {e} because file does not exist!!!!")
             pytest.fail()
+
+    @pytest.mark.order(4)
+    @pytest.mark.data_quality
     def test_data_quality_file_size_for_supplier_data_json(self):
 
         try:

@@ -1,15 +1,2 @@
-2026-11-18 18:17:28,937 - test_script.test_data_quality - INFO - FILE EXISTENCE CHECK STARTS
-2026-11-18 18:17:28,938 - test_script.test_data_quality - INFO - FILE SIZE CHECK ENDS
-2026-11-18 18:17:29,175 - test_script.test_data_quality - INFO - Inventory Data Quality Test Started
-2026-11-18 18:17:29,179 - test_script.test_data_quality - INFO - Product File Existence Check Test Started
-2026-11-18 18:17:29,183 - test_script.test_data_quality - INFO - Sales File Existence Check Test Started
-2026-11-18 18:17:29,186 - test_script.test_data_quality - INFO - Stores File Existence Check Test Started
-2026-11-18 18:17:29,193 - test_script.test_data_quality - INFO - Supplier File Existence CheckTest Started
-2026-11-18 18:17:29,194 - test_script.test_data_quality - INFO - FILE EXISTENCE CHECK ENDS
-2026-11-18 18:17:29,194 - test_script.test_data_quality - INFO - ========file existence stopping and file size starting==================
-2026-11-18 18:17:29,199 - test_script.test_data_quality - INFO - FILE SIZE CHECK STARTS
-2026-11-18 18:17:29,200 - test_script.test_data_quality - INFO - Inventory Data file size Test Started
-2026-11-18 18:17:29,209 - test_script.test_data_quality - INFO - Product Data file size Test Started
-2026-11-18 18:17:29,214 - test_script.test_data_quality - INFO - Sales Data file size Test Started
-2026-11-18 18:17:29,220 - test_script.test_data_quality - INFO - Stores Data file size Test Started
-2026-11-18 18:17:29,228 - test_script.test_data_quality - INFO - Supplier Data file size Test Started
+2026-11-18 21:59:46,556 - test_script.test_data_quality - INFO - FILE EXISTENCE CHECK STARTS
+2026-11-18 21:59:46,556 - test_script.test_data_quality - INFO - FILE SIZE CHECK ENDS

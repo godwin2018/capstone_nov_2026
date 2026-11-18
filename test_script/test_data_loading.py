@@ -27,7 +27,7 @@ class TestDataloading:
     validation_utility = ValidationUtility()
     base_utility = BaseUtility()
 
-    #@pytest.mark.skip
+    @pytest.mark.data_loading
     def test_data_loading_for_monthly_sales_summary(self,connect_postgress_database):
       test_case_name = inspect.currentframe().f_code.co_name # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
       logger.info(f"Starting test: {test_case_name}")
@@ -44,3 +44,18 @@ class TestDataloading:
       except Exception as e:
           logger.error(f"test case failed {test_case_name}:{e}")
           pytest.fail()
+
+    @pytest.mark.data_loading
+    @pytest.mark.skip(reason="yet to be developed")
+    def test_data_loading_for_fact_inventory(self, connect_postgress_database):
+        pass
+
+    @pytest.mark.data_loading
+    @pytest.mark.skip(reason="yet to be developed")
+    def test_data_loading_for_fact_sales(self, connect_postgress_database):
+        pass
+
+    @pytest.mark.data_loading
+    @pytest.mark.skip(reason="yet to be developed")
+    def test_data_loading_for_inventory_level_by_stores(self, connect_postgress_database):
+        pass
