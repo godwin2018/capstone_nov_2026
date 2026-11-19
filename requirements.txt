@@ -2,6 +2,7 @@ pytest
 oracledb
 pandas
 sqlalchemy
-create_engine
-inspect
 logging
+boto3
+paramiko
+psycopg[binary]

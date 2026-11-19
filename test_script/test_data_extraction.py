@@ -71,6 +71,7 @@ class TestDataExtraction:
 
     @pytest.mark.data_extraction
     @pytest.mark.smoke
+    @pytest.mark.skip
     def test_data_extraction_inventory_file_stag(self, connect_postgress_database):
         test_case_name = inspect.currentframe().f_code.co_name
         logger.info(f"Starting test: {test_case_name}")

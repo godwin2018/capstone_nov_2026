@@ -1,41 +1,80 @@
-2026-11-19 17:45:12,187 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 17:45:12,474 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 17:45:12,475 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag22026-11-19 17:45:12,515 - common_utilities.utilities - INFO - xml read from file: test_data/inventory_data.xml
-2026-11-19 17:45:12,525 - common_utilities.utilities - INFO - expected data:     product_id  store_id  quantity_on_hand last_updated
-0          101         1                50   2024-09-01
-1          102         1                30   2024-09-02
-2          103         2                40   2024-09-03
-3          106         3                25   2024-09-06
-4          107         1                35   2024-09-07
-5          108         2                45   2024-09-08
-6          109         3                55   2024-09-09
-7          110         3                65   2024-09-10
-8          101         4                50   2024-09-11
-9          102         4                40   2024-09-12
-10         103         5                30   2024-09-13
-11         104         5                20   2024-09-14
-12        2026-11-19 17:45:12,718 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name  ... rating last_order_date
-0            1      ABC Distributors  ...    4.8      2024-11-20
-1            2     Global Goods Inc.  ...    4.3      2024-11-19
-2            3   GreenTech Solutions  ...    4.6      2024-11-18
-3            4              EuroWare  ...    4.2      2024-11-22
-4            5      Pacific Products  ...    4.7      2024-11-17
-5            6     Fresh Produce Co.  ...    4.4      2024-11-21
-6            7  TechCore Electronics  ...    4.9      2024-11-23
-7            8       HanYang Trading  ...    4.1      2024-11-16
-8            9         Indo Supplies  ...    4.3      2024-11-25
-9           10         LatAm Imports  ...    4.5      2024-11-20
+2026-11-19 20:12:11,291 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:12:11,588 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:12:11,589 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag
+2026-11-19 20:12:11,591 - common_utilities.utilities - ERROR - test_data_extraction_inventory_file_stag validation failed lxml not found, please install or use the etree parser.
+2026-11-19 20:12:12,323 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:12:12,324 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:12:12,324 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:12:12,325 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
+2026-11-19 20:12:12,327 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
+2026-11-19 20:12:12,331 - common_utilities.utilities - INFO - expected data:    product_id        product_name  ...    brand  rating
+0         101           iPhone 15  ...    Apple     4.8
+1         102  Samsung Galaxy S23  ...  Samsung     4.7
+2         103         Dell XPS 13  ...     Dell     4.6
+3         104      MacBook Pro 14  ...    Apple     4.9
+4         105     Sony WH-1000XM5  ...     Sony     4.7
+5         106       Nike Air Zoom  ...     Nike     4.5
+6         107      Samsung 55" TV  ...  Samsung     4.4
+7         108    Philips Hue Bulb  ...  Philips     4.8
+8         109     Fitbit Charge 5  ...   Fitbit     4.6
+9         110   Kindle Paperwhite  ...   Amazon     4.7
+
+[10 rows x 7 columns]
+2026-11-19 20:12:12,466 - common_utilities.utilities - INFO - actual data:    product_id        product_name  ...    brand  rating
+0         101           iPhone 15  ...    Apple     4.8
+1         102  Samsung Galaxy S23  ...  Samsung     4.7
+2         103         Dell XPS 13  ...     Dell     4.6
+3         104      MacBook Pro 14  ...    Apple     4.9
+4         105     Sony WH-1000XM5  ...     Sony     4.7
+5         106       Nike Air Zoom  ...     Nike     4.5
+6         107      Samsung 55" TV  ...  Samsung     4.4
+7         108    Philips Hue Bulb  ...  Philips     4.8
+8         109     Fitbit Charge 5  ...   Fitbit     4.6
+9         110   Kindle Paperwhite  ...   Amazon     4.7
+
+[10 rows x 7 columns]
+2026-11-19 20:12:12,470 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
+2026-11-19 20:12:12,470 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
+2026-11-19 20:12:12,471 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:12:12,474 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:12:12,475 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:12:12,475 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_supplier_file_stag
+2026-11-19 20:12:12,486 - common_utilities.utilities - INFO - JSON read from file: test_data/supplier_data.json
+2026-11-19 20:12:12,489 - common_utilities.utilities - INFO - expected data:    supplier_id         supplier_name  ...  rating last_order_date
+0            1      ABC Distributors  ...     4.8      2024-11-20
+1            2     Global Goods Inc.  ...     4.3      2024-11-19
+2            3   GreenTech Solutions  ...     4.6      2024-11-18
+3            4              EuroWare  ...     4.2      2024-11-22
+4            5      Pacific Products  ...     4.7      2024-11-17
+5            6     Fresh Produce Co.  ...     4.4      2024-11-21
+6            7  TechCore Electronics  ...     4.9      2024-11-23
+7            8       HanYang Trading  ...     4.1      2024-11-16
+8            9         Indo Supplies  ...     4.3      2024-11-25
+9           10         LatAm Imports  ...     4.5      2024-11-20
 
 [10 rows x 8 columns]
-2026-11-19 17:45:12,723 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
-2026-11-19 17:45:12,723 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
-2026-11-19 17:45:12,724 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-19 17:45:12,728 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 17:45:12,729 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 17:45:12,729 - conftest - INFO - oracle databse connection is being established..
-2026-11-19 17:45:12,803 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
-2026-11-19 17:45:12,804 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
-2026-11-19 17:45:12,934 - common_utilities.utilities - INFO - expected data :   store_id    store_name
+2026-11-19 20:12:12,569 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name  ...  rating last_order_date
+0            1      ABC Distributors  ...     4.8      2024-11-20
+1            2     Global Goods Inc.  ...     4.3      2024-11-19
+2            3   GreenTech Solutions  ...     4.6      2024-11-18
+3            4              EuroWare  ...     4.2      2024-11-22
+4            5      Pacific Products  ...     4.7      2024-11-17
+5            6     Fresh Produce Co.  ...     4.4      2024-11-21
+6            7  TechCore Electronics  ...     4.9      2024-11-23
+7            8       HanYang Trading  ...     4.1      2024-11-16
+8            9         Indo Supplies  ...     4.3      2024-11-25
+9           10         LatAm Imports  ...     4.5      2024-11-20
+
+[10 rows x 8 columns]
+2026-11-19 20:12:12,572 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
+2026-11-19 20:12:12,573 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
+2026-11-19 20:12:12,573 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:12:12,574 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:12:12,574 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:12:12,575 - conftest - INFO - oracle databse connection is being established..
+2026-11-19 20:12:12,603 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
+2026-11-19 20:12:12,604 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
+2026-11-19 20:12:12,655 - common_utilities.utilities - INFO - expected data :   store_id    store_name
 0         1       Walmart
 1         2        Target
 2         3       BestBuy
@@ -46,7 +85,7 @@
 7         8          IKEA
 8         9     Walgreens
 9        10  CVS Pharmacy
-2026-11-19 17:45:13,046 - common_utilities.utilities - INFO - actual data:    store_id    store_name
+2026-11-19 20:12:12,731 - common_utilities.utilities - INFO - actual data:    store_id    store_name
 0         1       Walmart
 1         2        Target
 2         3       BestBuy
@@ -57,43 +96,7 @@
 7         8          IKEA
 8         9     Walgreens
 9        10  CVS Pharmacy
-2026-11-19 17:45:13,049 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
-2026-11-19 17:45:13,049 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
-2026-11-19 17:45:13,049 - conftest - INFO - oracle databse connection is been terminated..
-2026-11-19 17:45:13,049 - conftest - INFO - postgress databse connection is been terminated..
- 17:45:12,711 - common_utilities.utilities - INFO - test_data_extraction_inventory_file_stag passed
-2026-11-19 17:45:12,711 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_inventory_file_stag
-2026-11-19 17:45:12,712 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-19 17:45:12,718 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 17:45:12,718 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 17:45:12,719 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
-2026-11-19 17:45:12,723 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
-2026-11-19 17:45:12,738 - common_utilities.utilities - INFO - expected data:    product_id        product_name     category  ...  stock_quantity    brand rating
-0         101           iPhone 15  Smartphones  ...              50    Apple    4.8
-1         102  Samsung Galaxy S23  Smartphones  ...              75  Samsung    4.7
-2         103         Dell XPS 13      Laptops  ...              30     Dell    4.6
-3         104      MacBook Pro 14      Laptops  ...              25    Apple    4.9
-4         105     Sony WH-1000XM5   Headphones  ...             100     Sony    4.7
-5         106       Nike Air Zoom     Sneakers  ...             200     Nike    4.5
-6         107      Samsung 55" TV  Electronics  ...              40  Samsung    4.4
-7         108    Philips Hue Bulb   Smart Home  ...             500  Philips    4.8
-8         109     Fitbit Charge 5    Wearables  ...             150   Fitbit    4.6
-9         110   Kindle Paperwhite     eReaders  ...              80   Amazon    4.7
-
-[10 rows x 7 columns]
-2026-11-19 17:45:12,865 - common_utilities.utilities - INFO - actual data:    product_id        product_name     category  ...  stock_quantity    brand rating
-0         101           iPhone 15  Smartphones  ...              50    Apple    4.8
-1         102  Samsung Galaxy S23  Smartphones  ...              75  Samsung    4.7
-2         103         Dell XPS 13      Laptops  ...              30     Dell    4.6
-3         104      MacBook Pro 14      Laptops  ...              25    Apple    4.9
-4         105     Sony WH-1000XM5   Headphones  ...             100     Sony    4.7
-5         106       Nike Air Zoom     Sneakers  ...             200     Nike    4.5
-6         107      Samsung 55" TV  Electronics  ...              40  Samsung    4.4
-7         108    Philips Hue Bulb   Smart Home  ...             500  Philips    4.8
-8         109     Fitbit Charge 5    Wearables  ...             150   Fitbit    4.6
-9         110   Kindle Paperwhite     eReaders  ...              80   Amazon    4.7
-
-[10 rows x 7 columns]
-2026-11-19 17:45:12,871 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
-2026-11-19 17:45:12,871 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
-2026-11-19 17:45:12,871 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:12:12,734 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
+2026-11-19 20:12:12,734 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
+2026-11-19 20:12:12,735 - conftest - INFO - oracle databse connection is been terminated..
+2026-11-19 20:12:12,735 - conftest - INFO - postgress databse connection is been terminated..
