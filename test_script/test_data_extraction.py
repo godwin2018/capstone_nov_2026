@@ -4,6 +4,7 @@ from common_utilities.utilities import ValidationUtility, BaseUtility
 from test_configuration.etlconfig import *
 import logging
 import pytest
+from _pytest.python import CallSpec2
 
 
 # Logging functionality
