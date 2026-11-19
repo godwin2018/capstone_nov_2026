@@ -1,0 +1,6 @@
+pytest
+oracledb
+pandas
+sqlalchemy
+inspect
+logging
