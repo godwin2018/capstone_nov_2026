@@ -1,102 +1,68 @@
-2026-11-19 20:12:11,291 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 20:12:11,588 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 20:12:11,589 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag
-2026-11-19 20:12:11,591 - common_utilities.utilities - ERROR - test_data_extraction_inventory_file_stag validation failed lxml not found, please install or use the etree parser.
-2026-11-19 20:12:12,323 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-19 20:12:12,324 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 20:12:12,324 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 20:12:12,325 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
-2026-11-19 20:12:12,327 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
-2026-11-19 20:12:12,331 - common_utilities.utilities - INFO - expected data:    product_id        product_name  ...    brand  rating
-0         101           iPhone 15  ...    Apple     4.8
-1         102  Samsung Galaxy S23  ...  Samsung     4.7
-2         103         Dell XPS 13  ...     Dell     4.6
-3         104      MacBook Pro 14  ...    Apple     4.9
-4         105     Sony WH-1000XM5  ...     Sony     4.7
-5         106       Nike Air Zoom  ...     Nike     4.5
-6         107      Samsung 55" TV  ...  Samsung     4.4
-7         108    Philips Hue Bulb  ...  Philips     4.8
-8         109     Fitbit Charge 5  ...   Fitbit     4.6
-9         110   Kindle Paperwhite  ...   Amazon     4.7
-
-[10 rows x 7 columns]
-2026-11-19 20:12:12,466 - common_utilities.utilities - INFO - actual data:    product_id        product_name  ...    brand  rating
-0         101           iPhone 15  ...    Apple     4.8
-1         102  Samsung Galaxy S23  ...  Samsung     4.7
-2         103         Dell XPS 13  ...     Dell     4.6
-3         104      MacBook Pro 14  ...    Apple     4.9
-4         105     Sony WH-1000XM5  ...     Sony     4.7
-5         106       Nike Air Zoom  ...     Nike     4.5
-6         107      Samsung 55" TV  ...  Samsung     4.4
-7         108    Philips Hue Bulb  ...  Philips     4.8
-8         109     Fitbit Charge 5  ...   Fitbit     4.6
-9         110   Kindle Paperwhite  ...   Amazon     4.7
-
-[10 rows x 7 columns]
-2026-11-19 20:12:12,470 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
-2026-11-19 20:12:12,470 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
-2026-11-19 20:12:12,471 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-19 20:12:12,474 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 20:12:12,475 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 20:12:12,475 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_supplier_file_stag
-2026-11-19 20:12:12,486 - common_utilities.utilities - INFO - JSON read from file: test_data/supplier_data.json
-2026-11-19 20:12:12,489 - common_utilities.utilities - INFO - expected data:    supplier_id         supplier_name  ...  rating last_order_date
-0            1      ABC Distributors  ...     4.8      2024-11-20
-1            2     Global Goods Inc.  ...     4.3      2024-11-19
-2            3   GreenTech Solutions  ...     4.6      2024-11-18
-3            4              EuroWare  ...     4.2      2024-11-22
-4            5      Pacific Products  ...     4.7      2024-11-17
-5            6     Fresh Produce Co.  ...     4.4      2024-11-21
-6            7  TechCore Electronics  ...     4.9      2024-11-23
-7            8       HanYang Trading  ...     4.1      2024-11-16
-8            9         Indo Supplies  ...     4.3      2024-11-25
-9           10         LatAm Imports  ...     4.5      2024-11-20
-
-[10 rows x 8 columns]
-2026-11-19 20:12:12,569 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name  ...  rating last_order_date
-0            1      ABC Distributors  ...     4.8      2024-11-20
-1            2     Global Goods Inc.  ...     4.3      2024-11-19
-2            3   GreenTech Solutions  ...     4.6      2024-11-18
-3            4              EuroWare  ...     4.2      2024-11-22
-4            5      Pacific Products  ...     4.7      2024-11-17
-5            6     Fresh Produce Co.  ...     4.4      2024-11-21
-6            7  TechCore Electronics  ...     4.9      2024-11-23
-7            8       HanYang Trading  ...     4.1      2024-11-16
-8            9         Indo Supplies  ...     4.3      2024-11-25
-9           10         LatAm Imports  ...     4.5      2024-11-20
-
-[10 rows x 8 columns]
-2026-11-19 20:12:12,572 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
-2026-11-19 20:12:12,573 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
-2026-11-19 20:12:12,573 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-19 20:12:12,574 - conftest - INFO - postgress databse connection is being established..
-2026-11-19 20:12:12,574 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-19 20:12:12,575 - conftest - INFO - oracle databse connection is being established..
-2026-11-19 20:12:12,603 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
-2026-11-19 20:12:12,604 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
-2026-11-19 20:12:12,655 - common_utilities.utilities - INFO - expected data :   store_id    store_name
-0         1       Walmart
-1         2        Target
-2         3       BestBuy
-3         4        Costco
-4         5    Home Depot
-5         6        Lowe's
-6         7   Apple Store
-7         8          IKEA
-8         9     Walgreens
-9        10  CVS Pharmacy
-2026-11-19 20:12:12,731 - common_utilities.utilities - INFO - actual data:    store_id    store_name
-0         1       Walmart
-1         2        Target
-2         3       BestBuy
-3         4        Costco
-4         5    Home Depot
-5         6        Lowe's
-6         7   Apple Store
-7         8          IKEA
-8         9     Walgreens
-9        10  CVS Pharmacy
-2026-11-19 20:12:12,734 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
-2026-11-19 20:12:12,734 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
-2026-11-19 20:12:12,735 - conftest - INFO - oracle databse connection is been terminated..
-2026-11-19 20:12:12,735 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:58,878 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,048 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,049 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_fact_sales_table_column_names_check
+2026-11-19 20:45:59,281 - common_utilities.utilities - INFO - actual_column_name: ['sales_id', 'product_id', 'store_id', 'quantity', 'total_sales', 'sale_date']
+2026-11-19 20:45:59,282 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_fact_sales_table_column_names_check
+2026-11-19 20:45:59,283 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,284 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,285 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,285 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_fact_inventory_table_column_names_check
+2026-11-19 20:45:59,375 - common_utilities.utilities - INFO - actual_column_name: ['product_id', 'store_id', 'quantity_on_hand', 'last_updated']
+2026-11-19 20:45:59,375 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_fact_inventory_table_column_names_check
+2026-11-19 20:45:59,377 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,385 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,386 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,387 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_inventory_level_by_stores_table_column_names_check
+2026-11-19 20:45:59,512 - common_utilities.utilities - INFO - actual_column_name: ['store_id', 'total_inventory']
+2026-11-19 20:45:59,512 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_inventory_level_by_stores_table_column_names_check
+2026-11-19 20:45:59,513 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,514 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,514 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,515 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_fact_sales_table_column_data_type_check
+2026-11-19 20:45:59,597 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,597 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,598 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,598 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,598 - common_utilities.utilities - INFO - actula data types are float64
+2026-11-19 20:45:59,598 - common_utilities.utilities - INFO - actula data types are object
+2026-11-19 20:45:59,598 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_fact_sales_table_column_data_type_check
+2026-11-19 20:45:59,599 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,602 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,602 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,603 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_fact_inventory_table_column_data_type_check
+2026-11-19 20:45:59,687 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,688 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,688 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,688 - common_utilities.utilities - INFO - actula data types are object
+2026-11-19 20:45:59,688 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_fact_inventory_table_column_data_type_check
+2026-11-19 20:45:59,689 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,690 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,690 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,691 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_monthly_sales_summary_table_column_data_type_check
+2026-11-19 20:45:59,777 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,777 - common_utilities.utilities - INFO - actula data types are object
+2026-11-19 20:45:59,777 - common_utilities.utilities - INFO - actula data types are float64
+2026-11-19 20:45:59,777 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_monthly_sales_summary_table_column_data_type_check
+2026-11-19 20:45:59,779 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,781 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,782 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,783 - test_script.test_schema_validation - INFO - Starting test: test_schema_validation_for_inventory_level_by_stores_table_column_data_type_check
+2026-11-19 20:45:59,952 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,952 - common_utilities.utilities - INFO - actula data types are int64
+2026-11-19 20:45:59,953 - test_script.test_schema_validation - INFO - successfully competed test: test_schema_validation_for_inventory_level_by_stores_table_column_data_type_check
+2026-11-19 20:45:59,953 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:45:59,955 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:45:59,955 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:45:59,956 - test_script.test_schema_validation - INFO - Starting test: test_data_quality_referential_integrity_check_for_product_id_column_between_foreign_fact_sales_and_primary_stag_product
+2026-11-19 20:46:00,155 - test_script.test_schema_validation - INFO - successfully competed test: test_data_quality_referential_integrity_check_for_product_id_column_between_foreign_fact_sales_and_primary_stag_product
+2026-11-19 20:46:00,156 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:46:00,158 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:46:00,158 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:46:00,159 - test_script.test_schema_validation - INFO - Starting test: test_data_quality_referential_integrity_check_for_sales_id_column_between_foreign_fact_sales_and_primary_stag_sales
+2026-11-19 20:46:00,379 - test_script.test_schema_validation - INFO - successfully competed test: test_data_quality_referential_integrity_check_for_sales_id_column_between_foreign_fact_sales_and_primary_stag_sales
+2026-11-19 20:46:00,381 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 20:46:00,383 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 20:46:00,384 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 20:46:00,385 - test_script.test_schema_validation - INFO - Starting test: test_data_quality_referential_integrity_check_for_store_id_column_between_foreign_fact_sales_and_primary_stag_stores
+2026-11-19 20:46:00,498 - test_script.test_schema_validation - INFO - successfully competed test: test_data_quality_referential_integrity_check_for_store_id_column_between_foreign_fact_sales_and_primary_stag_stores
+2026-11-19 20:46:00,499 - conftest - INFO - postgress databse connection is been terminated..
