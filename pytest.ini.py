@@ -1,5 +1,5 @@
 [pytest]
-addopt= --reruns 2 --reruns-delay 5 -n auto
+adopt= --reruns 2 --reruns-delay 5 -n auto
 markers=
     data_extraction: data extraction checks
     data_quality: data quality checks

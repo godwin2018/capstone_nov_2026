@@ -1,42 +1,8 @@
-2026-11-18 21:59:46,766 - conftest - INFO - postgress databse connection is being established..
-2026-11-18 21:59:46,923 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-18 21:59:46,924 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_sales_file_stag
-2026-11-18 21:59:46,928 - common_utilities.utilities - INFO - CSV read from file: test_data/sales_data.csv
-2026-11-18 21:59:46,938 - common_utilities.utilities - INFO - expected data:     sales_id  product_id  store_id  quantity  price   sale_date region
-0          1         101         1        10   15.0  2026-09-01   High
-1          2         102         1         5   25.0  2026-09-01    Low
-2          3         103         2         7   20.0  2026-09-02   High
-3          4         104         2         3   30.0  2026-09-03    Low
-4          5         105         1        12   12.0  2026-09-05   High
-..       ...         ...       ...       ...    ...         ...    ...
-57        58         108         2         6   24.0  2024-09-08    Low
-58        59         109         3        11   19.0  2024-09-09   High
-59        60         110         4         9   17.0  2024-09-10    Low
-60        59         109         3        11   19.0  2026-11-03   High
-61        60         110         4         9   17.0  2024-09-10    Low
-
-[62 rows x 7 columns]
-2026-11-18 21:59:47,039 - common_utilities.utilities - INFO - actual data:     sales_id  product_id  store_id  quantity  price   sale_date region
-0          1         101         1        10   15.0  2026-09-01   High
-1          2         102         1         5   25.0  2026-09-01    Low
-2          3         103         2         7   20.0  2026-09-02   High
-3          4         104         2         3   30.0  2026-09-03    Low
-4          5         105         1        12   12.0  2026-09-05   High
-..       ...         ...       ...       ...    ...         ...    ...
-57        58         108         2         6   24.0  2026-09-08    Low
-58        59         109         3        11   19.0  2026-09-09   High
-59        60         110         4         9   17.0  2026-09-10    Low
-60        59         109         3        11   19.0  2026-11-03   High
-61        60         110         4         9   17.0  2026-09-10    Low
-
-[62 rows x 7 columns]
-2026-11-18 21:59:47,047 - common_utilities.utilities - ERROR - test_data_extraction_sales_file_stag validation failed test_data_extraction_sales_file_stag failed
-2026-11-18 21:59:47,758 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-18 21:59:47,765 - conftest - INFO - postgress databse connection is being established..
-2026-11-18 21:59:47,765 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-18 21:59:47,765 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag
-2026-11-18 21:59:47,792 - common_utilities.utilities - INFO - xml read from file: test_data/inventory_data.xml
-2026-11-18 21:59:47,795 - common_utilities.utilities - INFO - expected data:     product_id  store_id  quantity_on_hand last_updated
+2026-11-19 08:55:42,959 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 08:55:43,213 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 08:55:43,214 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_inventory_file_stag
+2026-11-19 08:55:43,265 - common_utilities.utilities - INFO - xml read from file: test_data/inventory_data.xml
+2026-11-19 08:55:43,277 - common_utilities.utilities - INFO - expected data:     product_id  store_id  quantity_on_hand last_updated
 0          101         1                50   2024-09-01
 1          102         1                30   2024-09-02
 2          103         2                40   2024-09-03
@@ -67,7 +33,7 @@
 27         101         7               160   2024-10-01
 28         102         8               170   2024-10-02
 29         103         9               180   2024-10-03
-2026-11-18 21:59:47,863 - common_utilities.utilities - INFO - actual data:     product_id  store_id  quantity_on_hand last_updated
+2026-11-19 08:55:43,592 - common_utilities.utilities - INFO - actual data:     product_id  store_id  quantity_on_hand last_updated
 0          101         1                50   2024-09-01
 1          102         1                30   2024-09-02
 2          103         2                40   2024-09-03
@@ -98,14 +64,14 @@
 27         101         7               160   2024-10-01
 28         102         8               170   2024-10-02
 29         103         9               180   2024-10-03
-2026-11-18 21:59:47,865 - common_utilities.utilities - INFO - test_data_extraction_inventory_file_stag passed
-2026-11-18 21:59:47,865 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_inventory_file_stag
-2026-11-18 21:59:47,866 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-18 21:59:47,867 - conftest - INFO - postgress databse connection is being established..
-2026-11-18 21:59:47,868 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-18 21:59:47,868 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
-2026-11-18 21:59:47,870 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
-2026-11-18 21:59:47,878 - common_utilities.utilities - INFO - expected data:    product_id        product_name     category  price  stock_quantity    brand  rating
+2026-11-19 08:55:43,602 - common_utilities.utilities - INFO - test_data_extraction_inventory_file_stag passed
+2026-11-19 08:55:43,602 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_inventory_file_stag
+2026-11-19 08:55:43,603 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 08:55:43,604 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 08:55:43,605 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 08:55:43,605 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_product_file_stag
+2026-11-19 08:55:43,613 - common_utilities.utilities - INFO - CSV read from file: test_data/product_data.csv
+2026-11-19 08:55:43,621 - common_utilities.utilities - INFO - expected data:    product_id        product_name     category  price  stock_quantity    brand  rating
 0         101           iPhone 15  Smartphones    999              50    Apple     4.8
 1         102  Samsung Galaxy S23  Smartphones    899              75  Samsung     4.7
 2         103         Dell XPS 13      Laptops   1200              30     Dell     4.6
@@ -116,7 +82,7 @@
 7         108    Philips Hue Bulb   Smart Home     50             500  Philips     4.8
 8         109     Fitbit Charge 5    Wearables    150             150   Fitbit     4.6
 9         110   Kindle Paperwhite     eReaders    130              80   Amazon     4.7
-2026-11-18 21:59:47,946 - common_utilities.utilities - INFO - actual data:    product_id        product_name     category  price  stock_quantity    brand  rating
+2026-11-19 08:55:43,708 - common_utilities.utilities - INFO - actual data:    product_id        product_name     category  price  stock_quantity    brand  rating
 0         101           iPhone 15  Smartphones    999              50    Apple     4.8
 1         102  Samsung Galaxy S23  Smartphones    899              75  Samsung     4.7
 2         103         Dell XPS 13      Laptops   1200              30     Dell     4.6
@@ -127,14 +93,14 @@
 7         108    Philips Hue Bulb   Smart Home     50             500  Philips     4.8
 8         109     Fitbit Charge 5    Wearables    150             150   Fitbit     4.6
 9         110   Kindle Paperwhite     eReaders    130              80   Amazon     4.7
-2026-11-18 21:59:47,949 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
-2026-11-18 21:59:47,949 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
-2026-11-18 21:59:47,950 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-18 21:59:47,953 - conftest - INFO - postgress databse connection is being established..
-2026-11-18 21:59:47,954 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-18 21:59:47,954 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_supplier_file_stag
-2026-11-18 21:59:47,960 - common_utilities.utilities - INFO - JSON read from file: test_data/supplier_data.json
-2026-11-18 21:59:47,967 - common_utilities.utilities - INFO - expected data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
+2026-11-19 08:55:43,713 - common_utilities.utilities - INFO - test_data_extraction_product_file_stag passed
+2026-11-19 08:55:43,713 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_product_file_stag
+2026-11-19 08:55:43,714 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 08:55:43,718 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 08:55:43,718 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 08:55:43,718 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_supplier_file_stag
+2026-11-19 08:55:43,732 - common_utilities.utilities - INFO - JSON read from file: test_data/supplier_data.json
+2026-11-19 08:55:43,741 - common_utilities.utilities - INFO - expected data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
 0            1      ABC Distributors        John Doe                johndoe@abcdist.com       +1-555-0100        USA     4.8      2024-11-20
 1            2     Global Goods Inc.      Jane Smith          janesmith@globalgoods.com       +1-555-0200     Canada     4.3      2024-11-19
 2            3   GreenTech Solutions  Robert Johnson       robert.johnson@greentech.com  +44-20-7946-0100         UK     4.6      2024-11-18
@@ -145,7 +111,7 @@
 7            8       HanYang Trading      Laura King             laura.king@hanyang.com  +86-10-8888-7777      China     4.1      2024-11-16
 8            9         Indo Supplies  James Williams             james@indosupplies.com  +91-22-2678-9101      India     4.3      2024-11-25
 9           10         LatAm Imports   Olivia Harris     olivia.harris@latamimports.com  +52-55-2345-6789     Mexico     4.5      2024-11-20
-2026-11-18 21:59:48,037 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
+2026-11-19 08:55:43,823 - common_utilities.utilities - INFO - actual data:    supplier_id         supplier_name    contact_name                      contact_email     contact_phone    country  rating last_order_date
 0            1      ABC Distributors        John Doe                johndoe@abcdist.com       +1-555-0100        USA     4.8      2024-11-20
 1            2     Global Goods Inc.      Jane Smith          janesmith@globalgoods.com       +1-555-0200     Canada     4.3      2024-11-19
 2            3   GreenTech Solutions  Robert Johnson       robert.johnson@greentech.com  +44-20-7946-0100         UK     4.6      2024-11-18
@@ -156,15 +122,15 @@
 7            8       HanYang Trading      Laura King             laura.king@hanyang.com  +86-10-8888-7777      China     4.1      2024-11-16
 8            9         Indo Supplies  James Williams             james@indosupplies.com  +91-22-2678-9101      India     4.3      2024-11-25
 9           10         LatAm Imports   Olivia Harris     olivia.harris@latamimports.com  +52-55-2345-6789     Mexico     4.5      2024-11-20
-2026-11-18 21:59:48,039 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
-2026-11-18 21:59:48,039 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
-2026-11-18 21:59:48,040 - conftest - INFO - postgress databse connection is been terminated..
-2026-11-18 21:59:48,041 - conftest - INFO - postgress databse connection is being established..
-2026-11-18 21:59:48,041 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
-2026-11-18 21:59:48,042 - conftest - INFO - oracle databse connection is being established..
-2026-11-18 21:59:48,071 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
-2026-11-18 21:59:48,071 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
-2026-11-18 21:59:48,122 - common_utilities.utilities - INFO - expected data :   store_id    store_name
+2026-11-19 08:55:43,826 - common_utilities.utilities - INFO - test_data_extraction_supplier_file_stag passed
+2026-11-19 08:55:43,826 - test_script.test_data_extraction - INFO - succesfully competed test: test_data_extraction_supplier_file_stag
+2026-11-19 08:55:43,826 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 08:55:43,828 - conftest - INFO - postgress databse connection is being established..
+2026-11-19 08:55:43,829 - conftest - INFO - Engine(postgresql+psycopg://aug2026_user:***@localhost:5432/aug2026_project)
+2026-11-19 08:55:43,829 - conftest - INFO - oracle databse connection is being established..
+2026-11-19 08:55:43,928 - conftest - INFO - Engine(oracle+oracledb://gt:***@localhost:1522/xe)
+2026-11-19 08:55:43,929 - test_script.test_data_extraction - INFO - Starting test: test_data_extraction_stores_db_stag
+2026-11-19 08:55:44,131 - common_utilities.utilities - INFO - expected data :   store_id    store_name
 0         1       Walmart
 1         2        Target
 2         3       BestBuy
@@ -175,7 +141,7 @@
 7         8          IKEA
 8         9     Walgreens
 9        10  CVS Pharmacy
-2026-11-18 21:59:48,190 - common_utilities.utilities - INFO - actual data:    store_id    store_name
+2026-11-19 08:55:44,213 - common_utilities.utilities - INFO - actual data:    store_id    store_name
 0         1       Walmart
 1         2        Target
 2         3       BestBuy
@@ -186,7 +152,7 @@
 7         8          IKEA
 8         9     Walgreens
 9        10  CVS Pharmacy
-2026-11-18 21:59:48,193 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
-2026-11-18 21:59:48,193 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
-2026-11-18 21:59:48,194 - conftest - INFO - oracle databse connection is been terminated..
-2026-11-18 21:59:48,194 - conftest - INFO - postgress databse connection is been terminated..
+2026-11-19 08:55:44,215 - common_utilities.utilities - INFO - test_data_extraction_stores_db_stag passed
+2026-11-19 08:55:44,215 - test_script.test_data_extraction - INFO - successfully competed test: test_data_extraction_stores_db_stag
+2026-11-19 08:55:44,216 - conftest - INFO - oracle databse connection is been terminated..
+2026-11-19 08:55:44,216 - conftest - INFO - postgress databse connection is been terminated..

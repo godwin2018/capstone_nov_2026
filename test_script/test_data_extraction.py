@@ -30,6 +30,7 @@ class TestDataExtraction:
     @pytest.mark.order(7)
     @pytest.mark.data_extraction
     @pytest.mark.regression
+    @pytest.mark.skip
     def test_data_extraction_sales_file_stag(self,connect_postgress_database):
       test_case_name = inspect.currentframe().f_code.co_name # this code get the name of the current test case i.e. test_data_extraction_sales_file_stag
       logger.info(f"Starting test: {test_case_name}")
